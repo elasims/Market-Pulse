@@ -1,0 +1,68 @@
+16/16 cases labeled
+
+=== RESULTS ===
+retrieval precision@5 = 0.28 hit@5 = 11 / 16
+abstention  TP=6 FN=9 | TN=1 FP=0
+rules       citations=12 / 16  no_number_leak=16 / 16
+quality     faithful=3 / 6  matches_gold=5 / 6
+
+=== FAILURES ===
+
+[META 2026-09-09] missed driver (FN)
+NO CLEAR DRIVER. While excerpt [2] mentions Meta's new "Muse" agentic AI platform, it describes the feature in humorous, dismissive terms ("waste a mind-boggling amount of free compute") rather than highlighting a positive development that would drive a 6.55% gain. The other excerpts focus on competitors (Qualcomm, AMD, Broadcom, Pinterest) and do not provide information about Meta-specific news that would explain the upward move on this date.
+
+[MSTR 2026-09-18] unfaithful: ["Tom Lee's Q4 rally prediction boosted investor confidence in MSTR on 2026-09-18; excerpt [2] says the Fed raised rates less than 24 hours later and Bitcoin faces a steeper climb, so it does not support a positive driver", "Barclays' reiterated buy rating provided institutional support for the 16.39% rise; excerpt [5] gives no date or indication that it was new or tied to this day's move", "Enthusiasm for Bitcoin-backed financial instruments reinforced momentum; excerpt [4] concerns The Smarter Web Company, not MSTR, and does not link it to MSTR's move", 'Positive sentiment around Bitcoin reaching new highs; excerpts do not say Bitcoin was rising or hitting highs on that date', 'No identification of a crypto-regulatory catalyst lifting bitcoin, which is the actual driver, and nothing in the excerpts supports the attributed causes']
+Based on the provided excerpts, multiple factors likely contributed to MSTR's 16.39% rise on 2026-09-18:
+
+[2] Tom Lee's prediction of "one of the biggest rallies of our lifetime" in Q4, combined with positive sentiment around Bitcoin reaching new highs, likely boosted investor confidence in MSTR given its substantial Bitcoin holdings of 846,000 coins [1]. Additionally, [5] Barclays' reiterated buy rating with a $160 price target provided institutional support for the stock. The positive momentum may have also been reinforced by [4] broader enthusiasm for Bitcoin-backed financial instruments, which could benefit a company with MSTR's significant cryptocurrency exposure.
+
+[MSTR 2026-09-18] gold mismatch (gold: a crypto-regulatory catalyst that lifted bitcoin, amplified by MSTR's leveraged bitcoin exposure)
+Based on the provided excerpts, multiple factors likely contributed to MSTR's 16.39% rise on 2026-09-18:
+
+[2] Tom Lee's prediction of "one of the biggest rallies of our lifetime" in Q4, combined with positive sentiment around Bitcoin reaching new highs, likely boosted investor confidence in MSTR given its substantial Bitcoin holdings of 846,000 coins [1]. Additionally, [5] Barclays' reiterated buy rating with a $160 price target provided institutional support for the stock. The positive momentum may have also been reinforced by [4] broader enthusiasm for Bitcoin-backed financial instruments, which could benefit a company with MSTR's significant cryptocurrency exposure.
+
+[GOOGL 2026-09-23] missed driver (FN)
+NO CLEAR DRIVER
+
+The provided excerpts do not contain information that directly explains Google's 3.8% decline. Excerpt [1] discusses Big Tech stock compensation trends generally [1], excerpt [2] describes Google's new Chromebook products [2], and excerpt [3] highlights Meta's competing AI agent Muse gaining significant traction [3]. While Meta's AI success could theoretically represent competitive pressure on Google, the excerpts do not explicitly connect Meta's gains to Google's stock decline, and the Chromebook product news appears neutral rather than negative. Excerpt [4] concerns Palantir, not Google [4].
+
+[JPM 2026-09-14] missed driver (FN)
+NO CLEAR DRIVER. While the excerpts mention JPMorgan's actions—including a bullish call on Lithium Americas [2] and a double downgrade of MARA Holdings [4]—none of these directly explain JPMorgan's own stock decline. Excerpt [3] suggests Goldman Sachs warned of potential market disruption from Fed policy, which could have broad market implications, but this is attributed to Goldman's analysis rather than JPMorgan-specific news. The excerpts focus on JPMorgan's ratings of other companies rather than factors affecting JPMorgan itself.
+
+[META 2026-09-21] bad citations
+Meta's 11.43% surge appears driven by optimism around its new Muse AI agent platform [4]. The announcement that Meta's Muse could give Zuckerberg "another chance to build a powerful internet platform" with developer interest suggests significant growth potential in AI, which aligns with the broader "AI boom" reshaping Big Tech [1]. While the other excerpts touch on Meta-related topics like workforce retention and female leadership, only the Muse announcement directly addresses a new product initiative that would justify such a substantial stock gain.
+
+[META 2026-09-21] unfaithful: ['The claim that the 11.43% surge was driven by optimism around Muse is an inference; excerpt [4] only says Muse could give Zuckerberg another chance and that developers are paying attention, and says nothing about a stock move.', "Calling it an 'announcement' of Muse is not supported; excerpt [4] does not describe a launch or announcement.", 'The claim that developer interest suggests significant growth potential in AI goes beyond excerpt [4].', "The link between Muse and the 'AI boom' reshaping Big Tech [1] is not supported; excerpt [1] is about stock compensation and retention, not Meta's AI product.", "The statement that the other excerpts 'touch on Meta-related topics like workforce retention' is inaccurate; excerpt [1] is about Big Tech generally and excerpt [2] is about Amazon.", 'The claim that only Muse would justify such a substantial stock gain is unsupported speculation.']
+Meta's 11.43% surge appears driven by optimism around its new Muse AI agent platform [4]. The announcement that Meta's Muse could give Zuckerberg "another chance to build a powerful internet platform" with developer interest suggests significant growth potential in AI, which aligns with the broader "AI boom" reshaping Big Tech [1]. While the other excerpts touch on Meta-related topics like workforce retention and female leadership, only the Muse announcement directly addresses a new product initiative that would justify such a substantial stock gain.
+
+[XOM 2026-09-16] missed driver (FN)
+NO CLEAR DRIVER. While excerpt [4] indicates broad US stock weakness from Federal Reserve rate hikes and rising interest rates, which would naturally pressure energy stocks including XOM, this represents a general market decline rather than a company-specific driver [4]. In contrast, excerpt [1] describes a positive development for ExxonMobil with upgraded LNG sales guidance to 50 million tons by 2030 [1]. Excerpt [2] notes that options traders are betting against energy stocks broadly [2], but this describes trader positioning rather than a fundamental reason for the decline. The conflicting signals—positive company guidance offset by sector-wide headwinds and negative trader sentiment—do not clearly explain the magnitude of XOM's 3.54% decline.
+
+[COIN 2026-09-15] bad citations
+Coinbase fell sharply as the U.S. Senate rejected the Clarity Act, a long-awaited market structure bill for crypto [2]. The vote, which required 60 votes to advance, created significant regulatory uncertainty for cryptocurrency companies [4]. This legislative setback triggered a broad crypto stock selloff, with Coinbase leading losses alongside other major players in the sector [2]. The rejection of this potentially favorable regulation removed a key catalyst investors had anticipated, driving the outsized decline.
+
+[AAPL 2026-09-10] missed driver (FN)
+NO CLEAR DRIVER. The excerpts do not support a positive catalyst for Apple's stock move. Excerpt [1] warns that the iPhone 18 Pro announcement event could be a "negative catalyst" for the stock [1], which contradicts the upward movement. Excerpt [2] describes the announcement of the new iPhone Duo foldable phone, but provides no market reaction or investor sentiment data [2]. Excerpt [3] concerns executive compensation and is unrelated to stock performance [3]. None of these excerpts explain why investors would bid the stock up 3.56% on this date.
+
+[COIN 2026-09-18] missed driver (FN)
+NO CLEAR DRIVER.
+
+The provided excerpts from September 15-16 describe significant negative pressure on Coinbase, with the Senate rejecting the Clarity Act and crypto stocks falling sharply [1][3][5]. However, the prompt indicates COIN moved UP 11.66% on September 18—three days after these bearish developments. The excerpts do not contain any news from September 18 or explain any positive catalyst that would reverse the prior selloff and drive an 11.66% gain. Without reporting from the actual date of the move, the driver cannot be identified from these sources alone.
+
+[AAPL 2026-09-29] missed driver (FN)
+NO CLEAR DRIVER. While excerpt [2] describes Apple's $5.7 billion patent infringement verdict over its Taptic Engine [2], this news was reported on 2026-09-28, one day before the stock move, making it unlikely to be the primary driver of the 2026-09-29 decline. Excerpt [1] discusses regulatory scrutiny of prediction markets in stocks [1], but contains no Apple-specific information. Excerpt [3] is technical background on Apple's Mikey chip [3] with no apparent connection to the stock move. The excerpts provided do not contain a clear explanation for the -2.66% decline on 2026-09-29.
+
+[JPM 2026-09-22] missed driver (FN)
+NO CLEAR DRIVER. The excerpts provided do not contain information directly explaining JPMorgan's significant 3.42% stock decline. While [1] mentions SoftBank raising $11bn in bonds (which could theoretically affect JPMorgan if they were involved in underwriting), the excerpt does not specify JPMorgan's role or involvement. The remaining excerpts [2-5] discuss other companies' stock movements and corporate actions (energy stocks, MongoDB, Microsoft dividends, and Shopify partnerships) but contain no information about JPMorgan itself or factors that would drive its stock price down.
+
+[TSLA 2026-09-04] bad citations
+Tesla's 5.92% decline appears driven by regulatory scrutiny surrounding the Cybercab launch. While Tesla officially launched its driverless Cybercab on September 4th [1], the National Highway Traffic Safety Administration simultaneously opened a federal investigation into whether the steering-wheel-free vehicle meets federal safety standards [2][3]. The investigation stems from Tesla's self-certification approach, contrasting unfavorably with Amazon's Zoox, which petitioned NHTSA for and received proper exemption approval [2]. This regulatory concern—combined with reports of a "muted" launch reception [1]—likely prompted investor concern about potential delays, compliance costs, or design modifications to the vehicle.
+
+[TSLA 2026-09-04] unfaithful: ['Investors were concerned about potential delays, compliance costs, or design modifications (speculation not in excerpts)', "NHTSA opened the investigation 'simultaneously' with the launch (excerpt 5 says a day after the rides began)"]
+Tesla's 5.92% decline appears driven by regulatory scrutiny surrounding the Cybercab launch. While Tesla officially launched its driverless Cybercab on September 4th [1], the National Highway Traffic Safety Administration simultaneously opened a federal investigation into whether the steering-wheel-free vehicle meets federal safety standards [2][3]. The investigation stems from Tesla's self-certification approach, contrasting unfavorably with Amazon's Zoox, which petitioned NHTSA for and received proper exemption approval [2]. This regulatory concern—combined with reports of a "muted" launch reception [1]—likely prompted investor concern about potential delays, compliance costs, or design modifications to the vehicle.
+
+[MSFT 2026-09-25] missed driver (FN)
+NO CLEAR DRIVER. The provided excerpts do not support a compelling explanation for MSFT's 3.66% gain. Excerpt [1] describes a promotional Office sale with no implications for stock performance [1]. Excerpt [2] mentions Trump's share dealings in Microsoft but provides no details about the direction or magnitude of those transactions [2]. Excerpt [3] discusses Meta's Muse launch affecting other stocks, not Microsoft [3]. Excerpt [4] describes a security vulnerability affecting Microsoft Defender, which would typically be negative, not positive [4]. None of these excerpts substantiate the significant upward move.
+
+[CRCL 2026-09-15] bad citations
+Circle's 11.41% decline was driven by regulatory disappointment in the crypto sector. The Senate rejected the Clarity Act, a long-awaited market structure bill that the crypto industry had been anticipating [3]. This rejection triggered a broad crypto stock selloff, with Circle among the hardest hit alongside Coinbase and Galaxy [3]. Additionally, ARK Invest, a major shareholder, trimmed its stake in Circle ahead of the Senate vote, which likely accelerated the selling pressure [2].

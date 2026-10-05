@@ -1,0 +1,70 @@
+16/16 cases labeled
+Judge parse failed. Expecting value: line 1 column 1 (char 0)
+
+=== RESULTS ===
+retrieval precision@5 = 0.26 hit@5 = 8 / 16
+abstention  TP=7 FN=6 | TN=3 FP=0
+rules       citations=10 / 16  no_number_leak=15 / 16
+quality     faithful=4 / 6  matches_gold=3 / 6
+
+=== FAILURES ===
+
+[META 2026-09-09] bad citations
+The most likely driver of Meta's 6.55% move up is JPMorgan's upgrade of the stock [5], which raised its price target to $820. This analyst upgrade would directly support positive sentiment around the stock on the trading day. Additionally, the broader cloud and AI infrastructure sector context—where major companies like Oracle are maintaining strong capex forecasts and expanding AI capacity [1]—may have provided favorable market conditions for Meta as an AI-focused technology company. The departure of AI talent [3] appears to be a negative factor that would not explain the upward move.
+
+[META 2026-09-09] unfaithful: ["The claim that the JPMorgan upgrade is the most likely driver of the 6.55% move is not supported. Excerpt [5] only says JPMorgan raised its price target and analyst Doug Anmuth turned bullish, with no link to that day's price move or its size.", "The claim that Oracle's capex forecast and cloud growth provided favorable market conditions for Meta is speculative. Excerpt [1] covers only Oracle's shares rising 7% and says nothing about Meta.", "The claim that the departure of AI talent is a negative factor is the model's own inference. Excerpt [3] reports Tulloch's exit but does not describe any market impact."]
+The most likely driver of Meta's 6.55% move up is JPMorgan's upgrade of the stock [5], which raised its price target to $820. This analyst upgrade would directly support positive sentiment around the stock on the trading day. Additionally, the broader cloud and AI infrastructure sector context—where major companies like Oracle are maintaining strong capex forecasts and expanding AI capacity [1]—may have provided favorable market conditions for Meta as an AI-focused technology company. The departure of AI talent [3] appears to be a negative factor that would not explain the upward move.
+
+[META 2026-09-09] gold mismatch (gold: the launch of Muse, Meta's personal AI agent)
+The most likely driver of Meta's 6.55% move up is JPMorgan's upgrade of the stock [5], which raised its price target to $820. This analyst upgrade would directly support positive sentiment around the stock on the trading day. Additionally, the broader cloud and AI infrastructure sector context—where major companies like Oracle are maintaining strong capex forecasts and expanding AI capacity [1]—may have provided favorable market conditions for Meta as an AI-focused technology company. The departure of AI talent [3] appears to be a negative factor that would not explain the upward move.
+
+[MSTR 2026-09-18] missed driver (FN)
+NO CLEAR DRIVER
+
+While several excerpts mention positive catalysts around MicroStrategy and Bitcoin [1][2][5], none directly address the 16.39% move on September 18th. Excerpt [2] discusses Q4 rally potential dated September 17th, and [5] is from September 15th with a Barclays buy rating, but these predate the move. Excerpt [3] describes a preferred stock buyback from September 16th that aimed to "stabilize" price rather than drive gains. Excerpt [4] discusses a different company (Smarter Web) surging on Bitcoin-backed shares, not MicroStrategy itself. The provided excerpts lack a specific news catalyst from September 18th that would explain this particular day's significant move.
+
+[GOOGL 2026-09-23] missed driver (FN)
+NO CLEAR DRIVER. The provided excerpts do not contain information that would explain a significant negative stock move on 2026-09-23. Excerpt [1] describes a new Gemini feature launching on Pixel 11, which is a product announcement rather than negative news [1]. Excerpt [2] discusses stock compensation trends in Big Tech generally, without specific criticism of Google [2]. Excerpt [3] covers new Chromebook releases with AI features, also a product update rather than negative catalyst [3]. None of these excerpts contain earnings misses, regulatory actions, competitive concerns, or other typical drivers of a -3.8% decline.
+
+[JPM 2026-09-14] bad citations
+The most likely driver of JPMorgan's decline is a negative outlook on the broader financial or macroeconomic environment. Goldman Sachs warned that the Fed may raise rates this week, with a cautionary note that holding steady could trigger a market selloff [4]. Additionally, an excerpt mentions a JPMorgan downgrade affecting a cryptocurrency-related company amid sector volatility [5], suggesting the bank may be taking a more cautious stance on risk assets. These macro headwinds and JPMorgan's own negative positioning on certain segments could have pressured the stock downward on this day.
+
+[JPM 2026-09-14] unfaithful: ["JPMorgan's downgrade of a crypto-related company suggests the bank is taking a more cautious stance on risk assets, which pressured JPM stock", "JPMorgan's own negative positioning on certain segments could have pressured the stock downward", "The Fed rate-hike warning is a direct driver of JPM's decline; excerpt [4] only says Goldman expects a hike and says nothing about JPM or bank stocks"]
+The most likely driver of JPMorgan's decline is a negative outlook on the broader financial or macroeconomic environment. Goldman Sachs warned that the Fed may raise rates this week, with a cautionary note that holding steady could trigger a market selloff [4]. Additionally, an excerpt mentions a JPMorgan downgrade affecting a cryptocurrency-related company amid sector volatility [5], suggesting the bank may be taking a more cautious stance on risk assets. These macro headwinds and JPMorgan's own negative positioning on certain segments could have pressured the stock downward on this day.
+
+[JPM 2026-09-14] gold mismatch (gold: a sector-wide bank selloff triggered by Bank of America's Q3 warning, on top of rate and macro pressure)
+The most likely driver of JPMorgan's decline is a negative outlook on the broader financial or macroeconomic environment. Goldman Sachs warned that the Fed may raise rates this week, with a cautionary note that holding steady could trigger a market selloff [4]. Additionally, an excerpt mentions a JPMorgan downgrade affecting a cryptocurrency-related company amid sector volatility [5], suggesting the bank may be taking a more cautious stance on risk assets. These macro headwinds and JPMorgan's own negative positioning on certain segments could have pressured the stock downward on this day.
+
+[META 2026-09-21] bad citations
+Meta's 11.43% jump was driven by strong investor enthusiasm for its Muse AI agent product. [1] The rally reflected confidence in Muse's early market traction, as the AI agent overtook ChatGPT to become the #1 iOS free app in the U.S. with over 2.5 million downloads in less than two weeks. [4] While a security vulnerability was discovered and patched in the Muse macOS app, [2] the positive market reception to the product's performance and download numbers appears to have outweighed concerns about the exploit, fueling the outsized 5.04 z-score move.
+
+[XOM 2026-09-16] number leak
+NO CLEAR DRIVER. While the excerpts contain mixed signals about Exxon, they don't clearly explain the -3.54% decline on 2026-09-16. Excerpt [2] reports a positive LNG expansion announcement on September 14, and excerpt [1] discusses a potentially beneficial Venezuelan oil deal (though published after the move). However, excerpt [4] indicates that futures traders were betting on a 12% drop in energy stocks broadly during this period [4], suggesting sector-wide headwinds rather than company-specific negative news. The decline appears driven by broader energy sector pessimism rather than Exxon-specific developments.
+
+[COIN 2026-09-15] bad citations
+Coinbase fell sharply on the failure of the Clarity Act to advance through the Senate. The crypto industry's top legislative priority failed to reach the 60 votes needed to proceed to a Senate floor vote [1][3], triggering a broad selloff across crypto stocks [3]. The legislation had been anticipated as potentially providing favorable market structure clarity and regulatory guidance for companies like Coinbase [5], so its rejection removed a key positive catalyst and raised uncertainty about the regulatory environment [3].
+
+[AAPL 2026-09-10] missed driver (FN)
+NO CLEAR DRIVER.
+
+The available excerpts do not support the upward move. Excerpt [1] warns that Apple's September 9 iPhone announcement could be a "negative catalyst" for the stock [1], which would suggest downward pressure rather than a 3.56% gain. Excerpt [2] describes the iPhone Duo announcement itself but provides no valuation or market reaction information [2]. Excerpt [3] addresses executive compensation and is unrelated to daily stock movements [3]. None of these excerpts explain why investors would bid the stock up on September 10.
+
+[AAPL 2026-09-29] missed driver (FN)
+NO CLEAR DRIVER
+
+The provided excerpts do not contain information that directly explains Apple's 2.66% decline. Excerpt [2] discusses Apple losing a $5.7 billion patent verdict over its Taptic Engine, but it's dated 2026-09-28 (the day before the stock move) and focuses on the litigation funder's gains rather than Apple's stock impact [2]. Excerpts [1] and [3] concern prediction markets regulation and United Airlines' CEO respectively, neither of which relate to Apple [1][3]. Without news directly addressing Apple's September 29th decline, the driver cannot be determined from these excerpts alone.
+
+[JPM 2026-09-22] missed driver (FN)
+NO CLEAR DRIVER. The excerpts provided do not contain information directly explaining JPMorgan's -3.42% decline. While [2] mentions SoftBank raising $11bn in bonds, this concerns SoftBank's financing needs rather than JPMorgan's operations or outlook. The other excerpts discuss AI spending trends [1], energy sector recommendations [3], MongoDB demand [4], and Microsoft's dividend [5]—none of which directly address factors that would drive a significant selloff in JPM stock. Without relevant news about JPMorgan's earnings, guidance, capital position, or business prospects, the driver of this move cannot be determined from the available sources.
+
+[TSLA 2026-09-04] bad citations
+Tesla's 5.92% decline appears driven by negative reception to the Cybercab launch combined with federal regulatory concerns. While the company officially launched its autonomous taxi at a private event in Austin [1], the rollout was described as "unusually muted" [1], and the market reacted poorly to a Cybercab update [2]. More significantly, the National Highway Traffic Safety Administration opened a federal investigation into whether Tesla's steering-wheel-free vehicle meets safety standards [2][3][5], particularly given that Tesla self-certified the vehicle rather than petitioning for an exemption like competitor Amazon's Zoox [2]. The regulatory scrutiny and underwhelming launch reception likely spooked investors on a day meant to showcase a key strategic bet for the company's future.
+
+[AMD 2026-09-21] gold mismatch (gold: Sector-wide AI chip rally (semiconductor index up about 4%) lifted by the success of Meta's Muse agent, which raised expectations of AI-agent CPU demand. AMD crossed $1T market cap after a five-session run of about +25%)
+The 9.95% gain was driven by AMD reaching a $1 trillion market capitalization milestone for the first time [4][5]. This achievement was fueled by renewed demand for AI chips [4], along with major deals with OpenAI and Oracle and strong data center revenue growth [3]. The stock extended a five-session winning streak as investors responded positively to AMD's strengthened position in the high-growth AI chip market [4].
+
+[MSFT 2026-09-25] missed driver (FN)
+NO CLEAR DRIVER. While excerpt [2] mentions that stock in Microsoft was bought and sold on behalf of the US president, it provides no information about the direction or magnitude of these transactions, making it impossible to connect this to the upward move [2]. Excerpt [1] describes a promotional sale on Office 2024, which is unlikely to drive a 3.66% stock move. Excerpt [4] describes a security vulnerability affecting Microsoft Defender, which could be negative but isn't positioned as a significant catalyst. None of these excerpts provide a clear, substantive explanation for the unusually large upward move.
+
+[CRCL 2026-09-15] bad citations
+Circle's -11.41% decline was driven by two interconnected negative catalysts. First, ARK Invest significantly trimmed its stake in the company ahead of a critical Senate vote [3], signaling reduced confidence from a major institutional investor. Second, and most significantly, the U.S. Senate rejected the long-awaited Clarity Act, a market structure bill that crypto investors had anticipated would benefit the sector [4]. The rejection triggered a broad crypto stock selloff, with Circle among the hardest-hit names [3][4].

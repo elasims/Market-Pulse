@@ -1,0 +1,66 @@
+16/16 cases labeled
+
+=== RESULTS ===
+retrieval precision@5 = 0.28 hit@5 = 11 / 16
+abstention  TP=7 FN=8 | TN=0 FP=1
+rules       citations=13 / 16  no_number_leak=16 / 16
+quality     faithful=3 / 8  matches_gold=5 / 7
+
+=== FAILURES ===
+
+[META 2026-09-09] missed driver (FN)
+NO CLEAR DRIVER. The provided excerpts discuss developments at other companies (Qualcomm, Amazon, Pinterest, AMD, and Broadcom) and a general description of Meta's AI platform, but none directly connect these events to Meta's stock movement or provide analysis of why Meta specifically rose.
+
+[MSTR 2026-09-18] bad citations
+Several excerpts point to different possible drivers. A bullish analyst call from Tom Lee about a historic Q4 rally could have boosted investor sentiment toward Bitcoin-correlated stocks like MicroStrategy [2]. Additionally, Barclays reiterated a buy rating on the company, which may have supported the move [5]. The broader cryptocurrency optimism mentioned in these excerpts aligns with the timing of MicroStrategy's 16.39% jump on this date.
+
+[MSTR 2026-09-18] unfaithful: ["The Tom Lee call 'could have boosted investor sentiment' for MicroStrategy, but excerpt [2] only notes he predicted a Q4 rally and that the Fed raised rates, and does not link this to MSTR's move.", "Barclays' reiterated buy rating 'may have supported the move', but excerpt [5] gives no indication it was a catalyst for a 16.39% jump.", "The 'broader cryptocurrency optimism' aligns with the timing of the jump, but excerpt [2] describes a steeper challenge for crypto after the Fed rate hike, not optimism, and no excerpt establishes timing.", 'The output does not mention a crypto-regulatory catalyst or leveraged bitcoin exposure, so the explanation of the large move is unsupported.']
+Several excerpts point to different possible drivers. A bullish analyst call from Tom Lee about a historic Q4 rally could have boosted investor sentiment toward Bitcoin-correlated stocks like MicroStrategy [2]. Additionally, Barclays reiterated a buy rating on the company, which may have supported the move [5]. The broader cryptocurrency optimism mentioned in these excerpts aligns with the timing of MicroStrategy's 16.39% jump on this date.
+
+[MSTR 2026-09-18] gold mismatch (gold: a crypto-regulatory catalyst that lifted bitcoin, amplified by MSTR's leveraged bitcoin exposure)
+Several excerpts point to different possible drivers. A bullish analyst call from Tom Lee about a historic Q4 rally could have boosted investor sentiment toward Bitcoin-correlated stocks like MicroStrategy [2]. Additionally, Barclays reiterated a buy rating on the company, which may have supported the move [5]. The broader cryptocurrency optimism mentioned in these excerpts aligns with the timing of MicroStrategy's 16.39% jump on this date.
+
+[GOOGL 2026-09-23] missed driver (FN)
+NO CLEAR DRIVER. The excerpts discuss Google's new Chromebook features and AI integration [2], but do not explain why this would cause a significant downward move. The other excerpts focus on Meta's competing AI agent [3] and unrelated Pentagon issues [4], neither of which directly addresses Google's stock performance.
+
+[JPM 2026-09-14] missed driver (FN)
+NO CLEAR DRIVER. The excerpts discuss JPMorgan's bullish stance on Lithium Americas [2] and its downgrade of other companies like MARA Holdings [4], but do not explain why JPMorgan's own stock declined. The only potentially relevant mention is Goldman Sachs' warning about potential Fed rate increases and market selloff [3], which could affect financial stocks broadly, but this is not directly connected to JPM's specific move.
+
+[XOM 2026-09-21] hallucinated driver (FP)
+The stock decline was likely driven by concerns about refining challenges and competitive pressures within the oil sector. Exxon's CFO warned of hidden risks and a severe refining squeeze [1], while simultaneously Chevron received praise as a superior investment option [2][3], suggesting investors may have rotated toward the stronger competitor. Additionally, the broader energy sector composition concerns outlined in the same trading period [5] may have contributed to selling pressure on oil and gas stocks generally.
+
+[XOM 2026-09-21] bad citations
+The stock decline was likely driven by concerns about refining challenges and competitive pressures within the oil sector. Exxon's CFO warned of hidden risks and a severe refining squeeze [1], while simultaneously Chevron received praise as a superior investment option [2][3], suggesting investors may have rotated toward the stronger competitor. Additionally, the broader energy sector composition concerns outlined in the same trading period [5] may have contributed to selling pressure on oil and gas stocks generally.
+
+[XOM 2026-09-21] unfaithful: ['Investors rotated toward Chevron as the stronger competitor, causing the XOM decline. Excerpts [2] and [3] only show Cramer praising Chevron and a dividend comparison, not any rotation out of Exxon.', "Chevron was described as a 'superior investment option' in [3]. The excerpt only asks which dividend survives a downturn and does not say Chevron is superior.", "Concerns about the broader energy sector composition in [5] contributed to selling pressure on oil and gas stocks. The XLE excerpt is about the fund's holdings being 91% oil and gas and says nothing about selling pressure or a cause of the decline.", "The CFO's warning about a refining squeeze [1] caused the decline. The excerpt reports the warning but does not link it to the stock move, so the causal claim is speculative.", 'Competitive pressures within the oil sector were a driver. No excerpt mentions competitive pressures.']
+The stock decline was likely driven by concerns about refining challenges and competitive pressures within the oil sector. Exxon's CFO warned of hidden risks and a severe refining squeeze [1], while simultaneously Chevron received praise as a superior investment option [2][3], suggesting investors may have rotated toward the stronger competitor. Additionally, the broader energy sector composition concerns outlined in the same trading period [5] may have contributed to selling pressure on oil and gas stocks generally.
+
+[META 2026-09-21] unfaithful: ['The claim that the 11.43% rise was driven by investor enthusiasm; excerpt [4] only says Muse could give Zuckerberg another shot at building a platform and that developers are paying attention, and says nothing about investors or the stock move', 'The claim that the Muse news likely outweighed other news items on the day', 'The claim that the development resonated strongly with investors seeking exposure to AI-driven growth']
+Meta's significant 11.43% rise appears driven by investor enthusiasm around the company's new Muse AI agent platform [4]. The excerpt suggests that Muse could represent another major platform-building opportunity for Meta under Mark Zuckerberg's leadership, with developers already showing interest in the technology [4]. This positive development in Meta's AI capabilities likely outweighed other news items on the day and resonated strongly with investors seeking exposure to AI-driven growth [4].
+
+[XOM 2026-09-16] unfaithful: ["Attributes the decline to macroeconomic headwinds from the Fed rate hike, but excerpt [4] only mentions the hike alongside lower crude prices weighing on energy stocks, and does not link the hike itself to XOM's drop", "Claims options traders' bearish bets caused or contributed to the decline; excerpt [2] only describes positioning and does not say it drove XOM's move on this day", "Does not mention lower crude prices as the driver, and claims the LNG news was 'apparently outweighed' by macro headwinds and bearish positioning, which is speculation not supported by the excerpts", 'Does not explain why XOM fell more than its sector']
+The stock declined as broad energy sector weakness pressured XOM on the day a Federal Reserve rate hike was announced [4]. Additionally, options traders were placing bets against energy stocks at an elevated pace, suggesting negative sentiment in the sector [2]. While ExxonMobil announced an upgrade to its LNG sales ambitions [1], this positive development was apparently outweighed by macroeconomic headwinds and sector-wide bearish positioning.
+
+[XOM 2026-09-16] gold mismatch (gold: a crude pullback that hit energy stocks, with XOM falling more than its sector)
+The stock declined as broad energy sector weakness pressured XOM on the day a Federal Reserve rate hike was announced [4]. Additionally, options traders were placing bets against energy stocks at an elevated pace, suggesting negative sentiment in the sector [2]. While ExxonMobil announced an upgrade to its LNG sales ambitions [1], this positive development was apparently outweighed by macroeconomic headwinds and sector-wide bearish positioning.
+
+[AAPL 2026-09-10] missed driver (FN)
+NO CLEAR DRIVER. The excerpts show that KeyBanc warned the iPhone 18 Pro event could be a negative catalyst [1], yet the stock rose 3.56% following the announcement of the iPhone Duo [2]. Additionally, an article about executive compensation [3] is unrelated to daily stock movement drivers.
+
+[COIN 2026-09-18] missed driver (FN)
+NO CLEAR DRIVER. The excerpts describe crypto stocks declining on September 15-16 ahead of and after the Senate's rejection of the Clarity Act, but they do not explain why Coinbase would rise 11.66% on September 18, two days after that failed vote.
+
+[AAPL 2026-09-29] missed driver (FN)
+NO CLEAR DRIVER. While excerpt [2] mentions Apple's $5.7 billion Taptic Engine patent verdict, this news was from September 28th (the day before the stock move), so it does not directly explain the September 29th decline. The other excerpts discuss prediction market regulation and a reverse-engineered chip design, neither of which provides a clear connection to the stock's downward move.
+
+[JPM 2026-09-22] missed driver (FN)
+NO CLEAR DRIVER. The excerpts discuss SoftBank's bond sale, energy sector recommendations, MongoDB earnings, Microsoft's dividend increase, and Shopify's AI partnership, but none of these directly explain JPMorgan's significant stock decline.
+
+[TSLA 2026-09-04] bad citations
+The stock fell after Tesla's Cybercab launch faced significant headwinds on multiple fronts. The company rolled out its steering-wheel-free taxis in Austin, but the launch was characterized as "unusually muted" [1], and the update "landed badly" with investors [2]. More critically, the National Highway Traffic Safety Administration opened a federal investigation into whether the vehicle meets safety standards, examining Tesla's self-certification process for a vehicle lacking steering wheels, pedals, and mirrors [2][3]. This regulatory scrutiny, combined with the underwhelming market reception of the highly anticipated autonomous vehicle, likely drove the decline.
+
+[MSFT 2026-09-25] missed driver (FN)
+NO CLEAR DRIVER. The excerpts mention a minor Office software discount [1], Trump's tech stock transactions [2], and a security vulnerability [4], none of which directly explain a significant 3.66% stock price increase for Microsoft on this date. The AI trade discussion [3] references Meta and other companies but does not mention Microsoft specifically.
+
+[CRCL 2026-09-15] unfaithful: ["ARK Invest's stake trim signaled reduced confidence in the company ahead of the regulatory setback"]
+Circle stock fell sharply after the Senate rejected the Clarity Act, a long-awaited market structure bill for cryptocurrency [3]. The rejection prompted a broad crypto stock selloff, with Circle among the heaviest decliners [3]. Additionally, ARK Invest trimmed its stake in Circle before the Senate vote, signaling reduced confidence in the company ahead of the regulatory setback [2].

@@ -1,0 +1,5 @@
+marketpulse-env/
+__pycache__/
+.DS_Store
+.env
+eval_cases*.json
